@@ -51,8 +51,8 @@ public:
                 int count = 1;
                 while (st.count(i + count))
                     count++;
+                longest = max(longest, count);
             }
-            longest = max(longest, count);
         }
     }
 }
