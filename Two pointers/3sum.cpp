@@ -9,6 +9,7 @@ public:
         int i, j, k;
         if (n < 3)
             return result;
+        sort(nums.begin(), nums.end());
         for (i = 0; i < n - 2; i++)
         {
             if (i > 0 && nums[i] == nums[i + 1])
