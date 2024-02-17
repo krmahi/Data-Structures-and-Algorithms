@@ -9,7 +9,7 @@ public:
         if (n == 1)
             return 0;
         if (n == 2)
-            return max(height[0], height[1]);
+            return min(height[0], height[1]);
         while (i < j)
         {
             int currarea = (j - i) * min(height[i], height[j]);
