@@ -26,10 +26,10 @@ public:
 
             if (r - l == n)
             {
-                if (mp[s2[left]] >= 0)
+                if (mp[s2[l]] >= 0)
                     count++;
                 mp[s2[l]]++;
-                i++
+                l++
             }
         }
         return false;
@@ -59,7 +59,7 @@ public:
         for (i = n; i < m; i++)
         {
             mp[s2[i]]--;
-            mp[s2[i - n]]--;
+            mp[s2[i - n]]++;
             if (ispermutation(mp))
                 return true;
         }
